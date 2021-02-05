@@ -1,0 +1,63 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f4f1de;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.section {
+  width: 100%;
+  margin: 0;
+}
+
+.footer {
+  color: white;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media (max-width: 767px) {
+    #largeLogo{
+      display: none;
+    }
+    #smallLogo {
+      display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    #largeLogo{
+      display: block;
+    }
+    #smallLogo {
+      display: none;
+    }
+}
