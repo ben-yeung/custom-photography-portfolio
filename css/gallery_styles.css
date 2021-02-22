@@ -15,19 +15,114 @@ body {
   text-align: center;
 }
 
+.parent {
+  margin-top: 90px;
+  width: 100%;
+  display: inline-block;
+}
+
 .footer {
   color: white;
   height: 80px;
   width: 100%;
   background-color: #3d405b;
-  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  position: fixed;
   bottom: 0;
   margin: 0;
 }
+
+.switches {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
+.main h1{
+    font-size: 42px;
+    color: #333;
+    font-weight: 700;
+}
+
+.main p{
+    font-size: 18px;
+    color: #687074;
+    width: 70%;
+    margin: 15px auto;
+}
+
+.main p a {
+	text-decoration: none;
+	color: #ec1c23;
+	font-weight: 900;
+}
+
+.main ul{
+    margin-top: 25px;
+}
+
+.main ul li{
+    width: 100px;
+    padding: 10px 15px;
+    border: 2px solid #333;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .5s ease;
+	  color: #333;
+}
+
+.main ul li.active,
+.main ul li:hover{
+    background-color: #ec1c23;
+    color: #FFF;
+    border: 2px solid #ec1c23;
+}
+
+.main ul li:last-of-type{
+    margin-right: 0 ;
+}
+
+.main .container-fluid{
+  overflow: hidden;
+  padding: 0;
+}
+
+.main .container-fluid .col-md-3{
+    padding: 0;
+    float: left;
+    transition: all 5s ease-in-out
+}
+
+.main .container-fluid{
+  overflow: hidden;
+  padding: 0;
+}
+
+.main .container-fluid .col-md-3{
+    padding: 0px;
+    float: left;
+    transition: all 5s ease-in-out
+}
+
+.main .container-fluid img{
+    width: 100%
+}
+
+@media (max-width: 767px){
+    .main .container-fluid img{
+        margin-bottom: 15px
+    }
+}
+
 
 /* width */
 ::-webkit-scrollbar {
@@ -110,7 +205,6 @@ body {
 }
 
 .gallery {
-  margin-top: 80px;
   padding: 20px;
   display: grid;
   grid-column-gap: 8px;
