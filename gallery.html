@@ -14,7 +14,7 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
   <title>Gallery View</title>
 
 </head>
@@ -34,7 +34,7 @@
           <a class="nav-link" href="gallery.html">gallery</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="aboutme.html">about me</a>
+          <a class="nav-link" target="_blank" href="https://www.ssmytech.com/bethyeungportfolio/">about me</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://docs.google.com/document/d/1gdZa7neMSXg3j8x5031pheW76Y7DrtpnHiqkzkJ3IK0/edit" target="_blank">resume</a>
@@ -43,49 +43,79 @@
     </div>
   </nav>
 
-  <div class="parent">
 
-    <section class="main text-center">
+  <div class="container">
+    <div id="myBtnContainer">
+      <button class="active-btn filter-button active" data-filter="all">all</button>
+      <button class="active-btn filter-button " data-filter="filter1">nature</button>
+      <button class="active-btn filter-button " data-filter="filter2">people</button>
+      <button class="active-btn filter-button " data-filter="filter3">urban</button>
+      <button class="active-btn filter-button " data-filter="filter4">misc</button>
+    </div>
+    <div class="gallery filter-gallery">
+      <img src="images/nature/buildings.jpg" class="single-image filter filter1 lozad" />
+      <img src="images/people/IMG_1726_Original.jpg" class="single-image filter filter2 lozad" />
+      <img src="images/urban/DSC_0331.jpg" class="single-image filter filter3 lozad" />
+      <img src="images/misc/DSC_0082.jpg" class="single-image filter filter4 lozad" />
+      <img src="images/nature/DSC_0481.jpg" class="single-image filter filter1 lozad lozad" />
+      <img src="images/people/portraits2.jpg" class="single-image filter filter2 lozad" />
+      <img src="images/urban/DSC_0453.jpg" class="single-image filter filter3 lozad" />
+      <img src="images/misc/DSC_0088.jpg" class="single-image filter filter4 lozad" />
+      <img src="images/nature/DSC_0486.jpg" class="single-image filter filter1 lozad" />
+      <img src="images/people/lookingat.jpg" class="single-image filter filter2 lozad" />
+      <img src="images/urban/DSC_0436.jpg" class="single-image filter filter3 lozad" />
+      <img src="images/misc/DSC_0102.jpg" class="single-image filter filter4 lozad" />
+      <img src="images/nature/framed.jpg" class="single-image filter filter1 lozad" />
+      <img src="images/people/portraits3.jpg" class="single-image filter filter2 lozad" />
+      <img src="images/urban/DSC_0439.jpg" class="single-image filter filter3 lozad" />
+      <img src="images/misc/DSC_0123.jpg" class="single-image filter filter4 lozad" />
+      <img src="images/nature/green.jpg" class="single-image filter filter1 lozad" />
+      <img src="images/people/lost_nervous_uneasy_worry.jpg" class="single-image filter filter2 lozad" />
+      <img src="images/urban/DSC_0347.jpg" class="single-image filter filter3 lozad" />
+      <img src="images/misc/DSC_0434.jpg" class="single-image filter filter4 lozad" />
+      <img src="images/nature/horizontal.jpg" class="single-image filter filter1 lozad" />
+      <img src="images/people/lookingaway1.jpg" class="single-image filter filter2 lozad" />
+      <img src="images/urban/DSC_0456.jpg" class="single-image filter filter3 lozad" />
+      <img src="images/misc/IMG_1719_Original.jpg" class="single-image filter filter4 lozad" />
+      <img src="images/nature/landscapes.jpg" class="single-image filter filter1 lozad" />
+      <img src="images/people/lookingaway2.jpg" class="single-image filter filter2 lozad" />
+      <img src="images/urban/DSC_0460.jpg" class="single-image filter filter3 lozad" />
+      <img src="images/misc/layout.jpg" class="single-image filter filter4 lozad" />
+      <img src="images/nature/leadingline.jpg" class="single-image filter filter1 lozad" />
+      <img src="images/people/inspired.jpg" class="single-image filter filter2 lozad" />
+      <img src="images/urban/leadingline.jpg" class="single-image filter filter3 lozad" />
+      <img src="images/misc/leadingline2.jpg" class="single-image filter filter4 lozad" />
+      <img src="images/nature/leadingroad.jpg" class="single-image filter filter1 lozad" />
+      <img src="images/urban/redgreenwhite.jpg" class="single-image filter filter3 lozad" />
+      <img src="images/misc/minimal_contrast.jpg" class="single-image filter filter4 lozad" />
+      <img src="images/nature/negative-2.jpg" class="single-image filter filter1 lozad" />
+      <img src="images/urban/streets1.jpg" class="single-image filter filter3 lozad" />
+      <img src="images/misc/minimal.jpg" class="single-image filter filter4 lozad" />
+      <img src="images/nature/orangeblue.JPG" class="single-image filter filter1 lozad" />
+      <img src="images/misc/misc.jpg" class="single-image filter filter4 lozad" />
+      <img src="images/nature/sea2.jpg" class="single-image filter filter1 lozad" />
+      <img src="images/misc/negative.jpg" class="single-image filter filter4 lozad" />
+      <img src="images/nature/shadowlines.jpg" class="single-image filter filter1 lozad" />
+      <img src="images/nature/silhouette.jpg" class="single-image filter filter1 lozad" />
+      <img src="images/misc/pattern_contrast.jpg" class="single-image filter filter4 lozad" />
+      <img src="images/nature/silhouette2.JPG" class="single-image filter filter1 lozad" />
+      <img src="images/misc/silhouette-2.jpg" class="single-image filter filter4 lozad" />
+      <img src="images/nature/sky.jpg" class="single-image filter filter1 lozad" />
+      <img src="images/misc/streetss.jpg" class="single-image filter filter4 lozad" />
+      <img src="images/nature/sunset1.jpg" class="single-image filter filter1 lozad" />
+      <img src="images/nature/water.jpg" class="single-image filter filter1 lozad" />
 
-      <ul class="switches">
-        <li data-class="all">all</li>
-        <li data-class="nature">nature</li>
-        <li data-class="people">people</li>
-        <li data-class="urban">urban</li>
-        <li data-class="misc">misc</li>
-      </ul>
-
-      <div class="container-fluid ">
-        <div class="col-md-3 images" data-class="people">
-          <img src="https://picsum.photos/300/200?random=1" alt="">
-        </div>
-        <div class="col-md-3 images" data-class="nature">
-          <img src="https://picsum.photos/500/300?random=2" alt="">
-        </div>
-        <div class="col-md-3 images" data-class="urban">
-          <img src="https://picsum.photos/300/200?random=3" alt="">
-        </div>
-        <div class="col-md-3 images" data-class="urban">
-          <img src="https://picsum.photos/300/200?random=4" alt="">
-        </div>
-        <div class="col-md-3 images" data-class="people">
-          <img src="https://picsum.photos/600/400?random=5" alt="">
-        </div>
-        <div class="col-md-3 images" data-class="misc">
-          <img src="https://picsum.photos/300/200?random=6" alt="">
-        </div>
-        <div class="col-md-3 images" data-class="nature">
-          <img src="https://picsum.photos/300/200?random=7" alt="">
-        </div>
-        <div class="col-md-3 images" data-class="misc">
-          <img src="https://picsum.photos/300/200?random=8" alt="">
-        </div>
-      </div>
-    </section>
-
-
+    </div>
   </div>
 
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <footer class="footer bg-dark">
@@ -93,43 +123,33 @@
     <h1 style="font-size:12pt;">Developed by Benjamin Yeung @ <a style="color:white; text-decoration: underline;" target="_blank" href="https://ssmytech.com">SSMYTech</a></h1>
   </footer>
 
+
   <script type="text/javascript">
-    var gallery = document.querySelector("#gallery");
-    var getVal = function(elem, style) {
-      return parseInt(window.getComputedStyle(elem).getPropertyValue(style));
-    };
-    var getHeight = function(item) {
-      return item.querySelector(".content").getBoundingClientRect().height;
-    };
-    var resizeAll = function() {
-      var altura = getVal(gallery, "grid-auto-rows");
-      var gap = getVal(gallery, "grid-row-gap");
-      gallery.querySelectorAll(".gallery-item").forEach(function(item) {
-        var el = item;
-        el.style.gridRowEnd =
-          "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
+    // Code By Webdevtrick ( https://webdevtrick.com )
+    jQuery(document).ready(function() {
+      const observer = lozad();
+      observer.observe();
+
+      $(".single-image").click(function() {
+        var t = $(this).attr("src");
+        $(".modal-body").html("<img src='" + t + "' class='modal-img'>");
+        $("#myModal").modal();
       });
-    };
-    gallery.querySelectorAll("img").forEach(function(item) {
-      item.classList.add("byebye");
-      if (item.complete) {
-        console.log(item.src);
-      } else {
-        item.addEventListener("load", function() {
-          var altura = getVal(gallery, "grid-auto-rows");
-          var gap = getVal(gallery, "grid-row-gap");
-          var gitem = item.parentElement.parentElement;
-          gitem.style.gridRowEnd =
-            "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
-          item.classList.remove("byebye");
-        });
-      }
     });
-    window.addEventListener("resize", resizeAll);
-    gallery.querySelectorAll(".gallery-item").forEach(function(item) {
-      item.addEventListener("click", function() {
-        item.classList.toggle("full");
-      });
+    jQuery(".filter-button").click(function() {
+      var value = jQuery(this).attr("data-filter");
+      if (value == "all") {
+        jQuery(".filter").show();
+      } else {
+        jQuery(".filter")
+          .not("." + value)
+          .hide();
+        jQuery(".filter")
+          .filter("." + value)
+          .show();
+      }
+      jQuery(".filter-button").removeClass("active");
+      jQuery(this).addClass("active");
     });
   </script>
 
