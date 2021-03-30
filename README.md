@@ -1,6 +1,6 @@
 # Custom Photography Portfolio
  
- Personal project showcasing a portfolio complete with a cover page, gallery of images (with filters), resume link, and about me link.
+ Personal project showcasing a portfolio complete with a cover page, gallery of images (with filters), resume link, and about me.
  
  Written primarily in HTML/CSS with Js to handle sorting/loading images.
  
