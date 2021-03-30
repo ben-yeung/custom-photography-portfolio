@@ -1,2 +1,2 @@
-# BethanyPhotographyPortfolio
+# Custom Photography Portfolio
  
