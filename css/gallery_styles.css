@@ -39,6 +39,45 @@ body {
   margin-bottom: 100px;
   width: 100%;
 }
+
+#myBtnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.filter-button {
+display:inline-block;
+
+    font-family: 'Quicksand', sans-serif;
+	text-decoration:none;
+
+	color:#928880;
+	background-color:transparent;
+	border:1px solid #928880;;
+	border-radius: 0px;
+
+	padding: .3em 1.2em;
+	margin: 10px;
+
+	background-size: 200% 100%;
+	background-image: linear-gradient(to right, transparent 50%, #928880; 50%);
+	transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
+}
+
+.filter-button:hover {
+    color:rgba(255, 255, 255, 1);
+	background-color:#928880;
+	background-position: -100% 100%;
+}
+.filter-button:active, .filter-button:focus {
+    color:rgba(255, 255, 255, 1);
+	background-color: #928880;
+	outline: none;
+}
+
 /* Code By Webdevtrick ( https://webdevtrick.com ) */
 .gallery {
   -webkit-column-count: 3;
@@ -74,17 +113,23 @@ body {
 }
 .modal-body {
   padding: 10px;
+  bottom: 40px;
 }
 .modal-dialog {
-  height: 100%;
   position: relative;
-  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 .modal-content {
-  border: none;
+  background-color: rgba(0, 0, 0, 0) !important;
+  border: none !important;
+}
+
+#myModal {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7) !important;
 }
 
 @media screen and (max-width: 767px) {
@@ -137,6 +182,11 @@ body {
     }
     #smallLogo {
       display: block;
+    }
+
+    #myBtnContainer {
+        padding: 20px;
+        display: inline-block;
     }
 }
 
